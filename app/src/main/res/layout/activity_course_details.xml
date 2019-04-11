@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationActivity.MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+        <!--Top Bar Start-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relLayoutTopBar"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/main_page_tool_bar"
+                    layout="@layout/app_bar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.AppBarLayout>
+
+        </RelativeLayout>
+        <!-- ~~~~ Top Bar -->
+
+
+
+
+
+        <!-- Top section ( Image, course price, course title etc -->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relLayoutTopSection"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relLayoutTopBar"
+            android:layout_above="@+id/relLayoutFragmentBar">
+
+            <FrameLayout
+                android:id="@+id/frameLayoutTop"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/courseImageEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/happy_woman" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/detailsCourseTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/coursePricePerHour"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_vertical"
+                android:paddingEnd="10dp"
+                android:paddingStart="20dp"
+                android:text="강의 제목을 적는 곳입니다."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/coursePricePerHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="54dp"
+                android:text="@string/course_price_example"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-54dp"
+                android:layout_toEndOf="@+id/coursePricePerHour"
+                android:text="/시간"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/coursePricePerHour"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+        </RelativeLayout>
+
+        <!-- ~~~~~Top section -->
+
+
+
+
+
+        <!-- Middle fragment navigation bar -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relLayoutFragmentBar"
+            android:layout_height="50dp"
+            android:layout_above="@id/relFragmentContentsSection">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tabs"
+                    android:background="@drawable/white_grey_border_top_and_bottom">
+
+                </android.support.design.widget.TabLayout>
+            </android.support.design.widget.AppBarLayout>
+
+
+        </RelativeLayout>
+
+        <!-- ~~~~~~Middle fragment navigation bar -->
+
+
+
+
+        <!--  fragment contents section -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relFragmentContentsSection"
+            android:layout_height="150dp"
+            android:layout_above="@id/relLayoutBottomBar">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/woman1"
+                        android:src="@drawable/happy_woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/woman2"
+                        android:src="@drawable/happy_woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/woman3"
+                        android:src="@drawable/happy_woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <ImageView
+                        android:id="@+id/woman4"
+                        android:src="@drawable/happy_woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relTopSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true">
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/middleFragmentBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </android.support.design.widget.AppBarLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <!-- ~~~~~~fragment contents section -->
+
+
+
+        <!-- Bottom Button Bar-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relLayoutBottomBar"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/registerCourseBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="83dp"
+                android:text="@string/register_course_btn_text" />
+
+            <Button
+                android:id="@+id/realTimeTalkBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="87dp"
+                android:text="@string/realtime_talk" />
+
+
+
+        </RelativeLayout>
+        <!-- ~~~~Bottom Button Bar-->
+
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

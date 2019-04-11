@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chatImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/happy_woman"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/chat_opponent_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/chat_message_opponent_name_example"
+        android:textColor="@color/Black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/chatImage"
+        app:layout_constraintStart_toStartOf="@+id/chatImage"
+        app:layout_constraintTop_toBottomOf="@+id/chatImage" />
+
+    <TextView
+        android:id="@+id/chatmessage_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/chatroom_date_example"
+        app:layout_constraintStart_toEndOf="@+id/chatmessage_content"
+        app:layout_constraintTop_toTopOf="@+id/chatmessage_content" />
+
+    <TextView
+        android:maxWidth="200dp"
+        android:id="@+id/chatmessage_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/grey_border"
+        android:padding="10dp"
+        android:text="@string/chat_list_message"
+        app:layout_constraintBottom_toBottomOf="@+id/chatImage"
+        app:layout_constraintStart_toEndOf="@+id/chatImage"
+        app:layout_constraintTop_toTopOf="@+id/chatImage" />
+
+
+</android.support.constraint.ConstraintLayout>

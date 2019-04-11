@@ -1,0 +1,195 @@
+<resources>
+    <string name="app_name">MyProject2</string>
+    <string name="home">홈</string>
+    <string name="search">검색</string>
+    <string name="wishList">위시리스트</string>
+    <string name="chat">채팅</string>
+    <string name="seeMore">더보기</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="show_as_grid">Show as grid</string>
+    <string name="show_as_list">Show as list</string>
+    <string name="login_hint">아이디</string>
+    <string name="password_hint">비밀번호</string>
+    <string name="login_title_button">로그인</string>
+    <string name="create_act_text">회원가입</string>
+    <string name="firstname">First name</string>
+    <string name="create_act_button_title">Create Account</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="user_name">이름</string>
+    <string name="add_course">강의 추가하기</string>
+    <string name="title_activity_add_course">AddCourseActivity</string>
+    <string name="add_course_text">강의 개설 페이지</string>
+    <string name="edit_course">강의 수정 페이지</string>
+    <string name="delete_course_for_real_title">정말로 강의를 삭제 하시겠습니까?</string>
+    <string name="delete_course_for_real_message">삭제한 강의는 복구할 수 없습니다.</string>
+    <string name="log_out">로그아웃</string>
+    <string name="create_account">회원가입</string>
+
+    <!-- activity add course -->
+    <string name="courseTitle">강의 제목</string>
+    <string name="tutor_name">튜터 이름</string>
+    <string name="tutor_price_per_hour">강의 시간당 가격</string>
+    <string name="tutor_image">튜터 이미지</string>
+    <string name="class_representitive_image">강의 대표 이미지</string>
+    <string name="register_class_button">강의 등록하기</string>
+
+
+    <!--firebase nodes-->
+
+    <string name="dbnode_users">users</string>
+    <string name="dbnode_courses">courses</string>
+    <string name="dbnode_liked_courses">liked_courses</string>
+    <string name="dbnode_enrolled_courses">enrolled_courses</string>
+    <string name="dbnode_courses_reg_req">coursesRegRequest</string>
+    <string name="dbnode_enrolled_students">enrolled_students</string>
+    <string name="dbnode_chatrooms">chatrooms</string>
+    <string name="dbnode_courses_search">courses_search</string>
+
+
+    <!--firebase database fields-->
+    <string name="field_admin">admin</string>
+    <string name="field_name">name</string>
+    <string name="field_phone">phone</string>
+    <string name="field_tutor">tutor</string>
+    <string name="field_user_id">user_id</string>
+    <string name="field_profile_image">profile_image</string>
+    <string name="field_sex">sex</string>
+    <string name="field_age">age</string>
+    <string name="field_job">job</string>
+    <string name="field_is_requested">requested</string>
+    <string name="field_interest">interest</string>
+    <string name="field_is_tutor">tutor</string>
+    <string name="field_course_registered_time">courseRegisteredTime</string>
+
+
+    <!--firebase storage fields-->
+    <string name="field_tutor_image">courseTutorImage</string>
+    <string name="field_course_image">courseImage</string>
+
+
+    <string name="custom_class">맞춤 CLASS</string>
+    <string name="new_recommend_course">NEW 추천</string>
+    <string name="all_courses">모든 CLASS</string>
+    <string name="register_tutor_button">튜터 등록하기</string>
+    <string name="edit_profile">프로필 편집</string>
+    <string name="sex">성별</string>
+    <string name="birth_year">출생연도</string>
+    <string name="name">이름</string>
+    <string name="please_input_name">이름을 입력하세요</string>
+    <string name="confirm">확인</string>
+    <string name="cancel">취소</string>
+    <string name="edit_name">이름 편집</string>
+    <string name="SE_age">세</string>
+    <string name="save">저장하기</string>
+    <string name="choose_image_from_memory">앨범에서 사진 선택</string>
+    <string name="take_photo">사진 촬영</string>
+    <string name="wish_lecture">찜한 강의</string>
+    <string name="register_course_btn_text">수업 신청하기</string>
+    <string name="realtime_talk">실시간톡</string>
+    <string name="course_price_example">20,000원</string>
+
+    <!-- Intent Extras -->
+    <string name="intent_course_detail">intent_course_detail</string>
+    <string name="intent_create_account">intent_create_account</string>
+    <string name="intent_tutor_id">intent_tutor_id</string>
+    <string name="intent_course">intent_course</string>
+
+    <!-- Google Maps Key-->
+    <string name="google_maps_key">AIzaSyATNjVomOrRG0rkEvgPjS9C-PlOquMrKEI</string>
+
+    <!--SharedPreference for searching course-->
+    <string name="sharedpreference">sharedpreference</string>
+
+    <!--Bundle Extras-->
+    <string name="bundle_tutor">bundle_tutor</string>
+    <string name="bundle_course">bundle_course</string>
+    <string name="course_target_explanation">수강 대상</string>
+    <string name="course_introduction">강의 소개</string>
+    <string name="course_curriculum">커리큘럼</string>
+    <string name="account_details_info">상세정보</string>
+    <string name="sample_phone_num">01012341234</string>
+
+    <!--alert Dialog for tutor reg button-->
+    <string name="reg_tutor_notice">튜터 등록 안내</string>
+    <string name="reg_tutor_content">튜터를 등록하시려면 반드시 강의를 개설한뒤, 관리자의 승인을 받아야 합니다.
+    관리자의 승인은 대략 1~2일 정도 걸립니다.</string>
+    <string name="course_list_that_requested_to_opne">개설 요청한 강의 목록</string>
+    <string name="courses_requested_list">강의개설 요청 목록</string>
+    <string name="admin_page">어드민 페이지</string>
+    <string name="check_tutor_info">튜터 정보 보기</string>
+    <string name="confirm_password">비밀번호 확인</string>
+    <string name="create_account_next_btn">다음</string>
+    <string name="settings">설정</string>
+    <string name="job">직업</string>
+    <string name="interested_field">관심분야</string>
+    <string name="tutor_course_info">튜터 and 코스 정보</string>
+    <string name="course_info">코스정보</string>
+    <string name="tutor_detail_info">튜터 상세 정보</string>
+    <string name="course_title">코스 제목</string>
+    <string name="confirm_course_registration">코스 등록 승인</string>
+    <string name="course_deny_registration">코스 등록 거절</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="wish_lectures">찜한 강의</string>
+    <string name="apply_course">수업 신청하기</string>
+    <string name="inquire_talk">문의톡</string>
+    <string name="course_day">강의요일</string>
+    <string name="course_place">강의장소</string>
+    <string name="course_hour">강의시간</string>
+    <string name="course_total_number_of_times">강의 총 횟수</string>
+    <string name="course_max_number_of_student">참여 가능한 최대 학생수</string>
+    <string name="check_course_place_and_time">장소와 시간대를 확인하세요.</string>
+    <string name="enroll_course_page">수업 신청하기 페이지</string>
+    <string name="applied_courses_list">수강 신청서</string>
+    <string name="notice_board">알림판</string>
+    <string name="FAQ">FAQ</string>
+    <string name="usage_rule">이용약관</string>
+    <string name="course_open_requested_for_tutor">개설 요청 강의(튜터 전용)</string>
+    <string name="course_opened_completed_for_tutor">개설 완료 강의(튜터 전용)</string>
+    <string name="date_sample">09/26 16:18</string>
+    <string name="enrolled_courses">수강 신청서</string>
+    <string name="check_course_enrolled_students_list">수업 신청 학생 목록보기</string>
+    <string name="dbnode_course_enrolled_date">course_enrolled_date</string>
+    <string name="student_name">학생 이름</string>
+    <string name="enrolled_stuents_list_check">강의 등록 학생 현황</string>
+    <string name="enrolled_students_account_detail_info">강의 등록 학생 상세 정보</string>
+    <string name="intent_enrolled_students_info">enrolled_students_info</string>
+    <string name="student_detail_info">학생 상세 정보</string>
+    <string name="no_enrolled_students_yet">아직 강의를 등록한 학생이 없습니다.</string>
+    <string name="require_talk">문의톡</string>
+    <string name="chat_opponent_name">대화 상대방 이름</string>
+    <string name="chatroom_date_example">09/26 16:17</string>
+    <string name="chat_list_message">안녕하세요~ </string>
+    <string name="chat_message_opponent_name_example">홍길동</string>
+    <string name="see_course_detail">수업보기</string>
+    <string name="intent_chatroom">chat_room</string>
+    <string name="field_chat_messages">chat_messages</string>
+    <string name="course_type">강의 해당분야</string>
+    <string name="send_chat">보내기</string>
+    <string name="find_you_want_to_learn">배우고 싶은 재능을 찾아보세요!</string>
+    <string name="my_courses">MyCourses</string>
+    <string name="field_course_title">courseTitle</string>
+    <string name="no_search_result">검색 결과가 없습니다.</string>
+    <string name="search_for_the_talent_you_want_to_learn">배우고 싶은 재능을 찾아보세요!</string>
+
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of
+        type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged.</string>
+
+    <string name="lorem_ipsum_long">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of
+        type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+        including versions of Lorem Ipsum. Contrary to popular belief, Lorem Ipsum is not simply random text.
+        It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+        Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
+        Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+        discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+        (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+        during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
+        1.10.32.</string>
+    <string name="dbnode_comments">comments</string>
+
+</resources>
