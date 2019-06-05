@@ -8,7 +8,6 @@ MyCourses는 개인의 재능을 판매할 수 있고 플랫폼에 올라온 다
 
 언어
 * JAVA
-* PHP
 
 운영체제
 * ANDROID
