@@ -11,7 +11,6 @@ MyCourses는 개인의 재능을 판매할 수 있고 플랫폼에 올라온 다
 
 운영체제
 * ANDROID
-* LINUX
 
 서버 및 데이터베이스
 * FIREBASE
